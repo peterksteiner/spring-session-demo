@@ -51,3 +51,8 @@ when we store the token POJO in the session, it really goes into Redis.
 
     {"errors":[{"code":"token not in session"}]}
 
+### Use redis-cli to check data
+
+    $ ./redis-cli keys '*'
+    1) "spring:session:sessions:baed75a7-30e5-41cc-b21f-9e87e159f37d"
+    2) "spring:session:expirations:1424922540000"
